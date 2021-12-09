@@ -1,0 +1,8 @@
+fabrick.base.url=https://sandbox.platfr.io
+fabrick.saldo.url=/api/gbs/banking/v4.0/accounts/%s/balance
+fabrick.transazioni.url=/api/gbs/banking/v4.0/accounts/%s/transactions
+fabrick.bonifico.url=/api/gbs/banking/v4.0/accounts/%s/payments/money-transfers
+
+db.url=jdbc:mysql://localhost:3306/fabrick
+db.user=root
+db.pw=MSRoot.1
