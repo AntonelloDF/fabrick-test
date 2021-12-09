@@ -22,6 +22,14 @@ public class BasicRequestDB {
 	@Autowired
 	private Properties properties;
 	
+
+	/**
+	 * Se chiamta con la stringa errorMessage il metodo si aspetta di dover salvare la richiesta di creazione bonifico,
+	 * in modo da storicizzare le richieste falline. Tramite lo status sarà possibile filtrare le richieste fallite.
+	@param 
+	@return 
+	@throws 
+	*/
 	public String saveBonifico(JSONObject bonifico, String errorMessage) {
 		logger.info("Start save Bonifico");
 		try (Connection conn = DriverManager.getConnection(properties.getProperty("db.url"),
