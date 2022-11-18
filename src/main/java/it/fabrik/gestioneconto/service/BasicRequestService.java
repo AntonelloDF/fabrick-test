@@ -19,6 +19,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 import it.fabrik.gestioneconto.db.BasicRequestDB;
 import it.fabrik.gestioneconto.utils.Constants;
 import it.fabrik.gestioneconto.utils.Properties;
+import it.fabrik.gestioneconto.utils.RestTemplateToFabrick;
 
 @Service
 public class BasicRequestService {
@@ -29,9 +30,12 @@ public class BasicRequestService {
 	@Autowired
 	private BasicRequestDB db;
 	
+	@Autowired
+	RestTemplateToFabrick restTemplate;
+	
 	public ResponseEntity<String> getSaldo(String idconto) {
 		try {
-			RestTemplate restTemplate = new RestTemplate();
+			
 			ResponseEntity<String> result;
 			String url = properties.getProperty("fabrick.base.url")
 					+ String.format(properties.getProperty("fabrick.saldo.url"), idconto);

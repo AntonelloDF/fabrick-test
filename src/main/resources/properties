@@ -3,6 +3,13 @@ fabrick.saldo.url=/api/gbs/banking/v4.0/accounts/%s/balance
 fabrick.transazioni.url=/api/gbs/banking/v4.0/accounts/%s/transactions
 fabrick.bonifico.url=/api/gbs/banking/v4.0/accounts/%s/payments/money-transfers
 
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true
+
 db.url=jdbc:mysql://localhost:3306/fabrick
 db.user=root
 db.pw=MSRoot.1

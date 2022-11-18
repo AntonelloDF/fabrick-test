@@ -35,6 +35,7 @@ public class BasicRequestDB {
 		try (Connection conn = DriverManager.getConnection(properties.getProperty("db.url"),
 				properties.getProperty("db.user"), properties.getProperty("db.pw"));
 				PreparedStatement pstmt = conn.prepareStatement(SAVE_BONIFICO);) {
+			
 			pstmt.setString(1, bonifico.getJSONObject("creditor").getString("name"));
 			pstmt.setString(2, bonifico.getJSONObject("creditor").getJSONObject("account").getString("accountCode"));
 			if(errorMessage == null) {
