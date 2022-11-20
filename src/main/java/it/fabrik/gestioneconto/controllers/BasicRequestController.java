@@ -20,7 +20,7 @@ public class BasicRequestController {
 	@Autowired
 	private BasicRequestService service;
 
-	@RequestMapping(value = "/getSaldo", method = RequestMethod.GET)
+	@RequestMapping(value = "/saldo", method = RequestMethod.GET)
 	public ResponseEntity<String> getSaldo(HttpServletRequest request) {
 		logger.info("Start getSadlo method");
 		try {
@@ -36,7 +36,7 @@ public class BasicRequestController {
 		}
 	}
 
-	@RequestMapping(value = "/getTransazioni", method = RequestMethod.GET)
+	@RequestMapping(value = "/transazioni", method = RequestMethod.GET)
 	public ResponseEntity<String> getTransazioni(HttpServletRequest request) {
 		logger.info("Start getTransazioni method");
 		try {
