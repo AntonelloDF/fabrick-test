@@ -18,7 +18,7 @@ mvn clean install
 
 [Console H2 (http://localhost:8080/h2-console/login.jsp)](http://localhost:8080/h2-console/login.jsp) 
 
-###REST API
+### REST API
 1. GET `/saldo` 
 2. GET `/transazioni` 
 3. POST `/doBonifico`
