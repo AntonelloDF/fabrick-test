@@ -2,9 +2,20 @@
     "status": "OK",
     "error": [],
     "payload": {
-        "date": "2022-11-19",
-        "balance": 7.07,
-        "availableBalance": 7.07,
-        "currency": "EUR"
+        "list": [
+            {
+                "transactionId": "1865798298001",
+                "operationId": "21000213486531",
+                "accountingDate": "2021-12-07",
+                "valueDate": "2021-12-07",
+                "type": {
+                    "enumeration": "GBS_TRANSACTION_TYPE",
+                    "value": "GBS_ACCOUNT_TRANSACTION_TYPE_0009"
+                },
+                "amount": -0.10,
+                "currency": "EUR",
+                "description": "BA TERRIBILE LUCA        REC 94748B390EF241F7ABFADAF8588D9CEE TEST CUTOFF"
+            }
+        ]
     }
 }

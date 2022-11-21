@@ -19,12 +19,12 @@ public class CasoBase extends TestActionBase{
 	//richiesta transazioni idconto=14537780&startDate=2021-12-01&endDate=2021-12-09
 	@Test
 	public void getTransazioni_01()throws Exception {
-		getTransazioni(Constant.SALDO_IN_01, Constant.SALDO_OUT_01);
+		getTransazioni(Constant.TRANSAZIONE_IN_01, Constant.TRANSAZIONE_OUT_01);
 	}
 	
-	//richiesta transazioni idconto=14537780&startDate=2021-12-01&endDate=2021-12-09
+	//richiesta bonifico idconto=14537780
 	@Test
 	public void bonifico_01()throws Exception {
-		getTransazioni(Constant.SALDO_IN_01, Constant.SALDO_OUT_01);
+		doBonifico(Constant.BONIFICO_IN_01, Constant.BONIFICO_OUT_01);
 	}
 }
